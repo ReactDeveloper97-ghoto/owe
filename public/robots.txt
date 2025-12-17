@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://our-we.netlify.app/sitemap.xml
+
+# Crawl delay for our server
+Crawl-delay: 5
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+Disallow: /login/
+Disallow: /dashboard/
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10
