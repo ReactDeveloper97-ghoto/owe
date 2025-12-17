@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/* @custom-variant dark(&:where(.dark, .dark*)); */
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family: neue-haas-grotesk-display, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.brand-logo svg {
+  width: 100%;
+  height: 12vh;
+}
+
+p {
+  color: #787878;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-small {
+  font-size: 16px;
+  line-height: 1.428571;
+  font-weight: 600;
+  width: 7.5rem;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+  padding: 10px 16px;
+  opacity: 70%;
+  border-radius: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-small-light {
+  color: white;
+  border: 2px solid white;
+
+}
+
+.btn-small-light:hover {
+  background: #8bc540;
+  opacity: 100%;
+  scale: 1.02;
+}
+
+.btn-small-dark {
+  color: #8bc540;
+  border: 2px solid #d1d5dc;
+  text-align: center;
+}
+
+.btn-small-dark:hover {
+  background: #083e4d;
+  color: #d1d5dc;
+  opacity: 100%;
+  scale: 1.02;
+}
+
+.btn-large {
+  cursor: pointer;
+  border-radius: 28px;
+  border: 2px solid transparent;
+  text-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 600 14px / 56px neue-haas-grotesk-display, Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 56px;
+  letter-spacing: .8px;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color .3s ease, border-color .3s ease, color .3s ease;
+  min-width: 216px;
+
+}
+
+.btn-large-dark {
+  background: #007698;
+  color: black;
+  opacity: 70%;
+}
+
+.btn-large-light {
+  background: #8bc540;
+  color: #fff;
+}
+
+.btn-large-light:hover {
+  background-color: transparent;
+  border-color: #8bc540;
+  color: #8bc540;
+}
+
+.btn-large-dark:hover {
+  background-color: transparent;
+  border-color: #007698;
+  color: #fff;
+}
+
+.hero-scroll-action.bg-dark {
+  background: url(/src/assets/curve-removebg-preview.png) no-repeat transparent;
+  bottom: -1px;
+  height: 50px;
+  background-position-x: center;
+  position: absolute;
+  background-size: cover;
+  transform: translateX(-50%);
+  width: 19rem;
+  z-index: 1;
+}
+
+.hero-scroll-action.bg-dark a {
+  left: 32%;
+  position: absolute;
+  bottom: -50%;
+
+}
+
+.hero-scroll-action.bg-light {
+  background: url('./assets//asset.white.hump.svg') no-repeat center .5px transparent;
+  bottom: -8px;
+  left: 50%;
+  height: 48px;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 12rem;
+  z-index: 1;
+}
+
+/* .dark {
+  background: #111;
+  color: #fff;
+}
+
+.light {
+  background: #fff;
+  color: #111;
+} */

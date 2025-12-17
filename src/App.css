@@ -1,0 +1,65 @@
+.programs-hero-img-container {
+    background: url('./assets/programs-landing-hero.jpeg');
+    object-position: center right;
+    max-height: inherit;
+}
+
+.elementary-hero-img-container {
+    background: url('./assets/early-elementary-hero.jpeg');
+    object-position: center right;
+    max-height: inherit;
+}
+
+.late-elementary-hero-img-container {
+    background: url('./assets/programs-landing-elementary.jpeg');
+    object-position: center right;
+    max-height: inherit;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.middle-school-hero-img-container {
+    background-image: url('./assets/programs-landing-middle-school.jpeg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    /* default */
+    background-size: cover;
+}
+
+.high-school-hero-img-container {
+    background-image: url('./assets/programs-landing-high-school.jpeg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: contain;
+    background-color: #ceb007;
+}
+
+/* Fix for mobile screen */
+@media (max-width: 350px) {
+   .competition-hero-img-container, .middle-school-hero-img-container {
+        background-size: cover;
+
+    }
+}
+
+.competition-hero-img-container {
+    background: url('./assets/programs-landing-competition.jpeg');
+     background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: contain;
+    background-color: #f3f3f3;
+   
+  
+    /* default */
+    background-size:contain;
+}
+
+.faqItemBody p {
+    color: #787878;
+    font: 400 16px / 26px neue-haas-grotesk-text, Helvetica Neue, Helvetica, Arial, sans-serif;
+    letter-spacing: .4px;
+    margin-top: 0;
+}
