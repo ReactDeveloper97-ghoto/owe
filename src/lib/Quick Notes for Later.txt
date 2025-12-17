@@ -1,0 +1,12 @@
+-- Jab data insert karna ho, ye queries use karna:
+-- 1. Check current data
+SELECT * FROM users LIMIT 5;
+
+-- 2. Insert test users
+INSERT INTO users (email, full_name, user_type) 
+VALUES ('test@example.com', 'Test User', 'parent');
+
+-- 3. Add related data
+INSERT INTO students (parent_id, full_name, grade) 
+SELECT id, 'Test Student', '5th Grade' 
+FROM users WHERE email = 'test@example.com';

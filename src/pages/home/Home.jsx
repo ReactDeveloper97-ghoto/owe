@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './../../components/Navbar';
+
 import Hero from './../../components/Hero';
 import { useThemeStore } from '../../store/themeStore';
 import img1 from './../../assets/test1.jpeg';
@@ -12,7 +12,6 @@ import { Link } from 'react-router'
 import { useEffect, useState } from "react";
 import { MoveRight } from 'lucide-react';
 import QuoteCarousel from '../../components/Carousel';
-import Footer from '../../components/Footer';
 import SEO from '../../components/SEO';
 
 const Home = () => {
@@ -99,7 +98,6 @@ const Home = () => {
         keywords="online education Pakistan, home tuition, virtual classes, school courses"
       />
       <div className={`${theme == 'light' ? 'bg-white' : 'bg-gray-800'}`}>
-        <Navbar />
         <Hero />
         {/* ------------------------------------ our programs------------- */}
 
@@ -253,7 +251,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </>
   )
