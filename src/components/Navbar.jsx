@@ -10,7 +10,7 @@ const Navbar = ({ darkColor }) => {
     const [lastScrollY, setLastScrollY] = useState(0)
     const { toggleTheme, theme } = useThemeStore()
     const location = useLocation() // Added for SEO
-    
+
     if (darkColor == 'white') {
         darkColor = darkColor;
     } else if (darkColor == 'black') {
@@ -19,7 +19,7 @@ const Navbar = ({ darkColor }) => {
     else {
         darkColor = ' '
     };
-    
+
     // SEO: Scroll to top on route change
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -53,8 +53,8 @@ const Navbar = ({ darkColor }) => {
                             <Logo darkColor={`${darkColor}`} />
                         </Link>
                     </div>
-                    <div 
-                        onClick={() => setShowmenu(!showmenu)} 
+                    <div
+                        onClick={() => setShowmenu(!showmenu)}
                         className="croxx block md:hidden"
                         aria-label={showmenu ? "Close menu" : "Open menu"}
                         role="button"
@@ -72,11 +72,11 @@ const Navbar = ({ darkColor }) => {
                                     home
                                 </li>
                             </Link>
-                            
+
                             {/* SEO: Programs dropdown with semantic structure */}
                             <div className="relative group">
-                                <Link 
-                                    to='/programs' 
+                                <Link
+                                    to='/programs'
                                     aria-label="Educational Programs"
                                     aria-haspopup="true"
                                     aria-expanded="false"
@@ -87,7 +87,7 @@ const Navbar = ({ darkColor }) => {
                                     </li>
                                 </Link>
                                 {/* Dropdown menu for SEO */}
-                                <ul 
+                                <ul
                                     className={`absolute leading-tight left-0 top-full rounded-b-lg pt-2 mt-1 w-40 ${theme == 'light' ? 'bg-white' : 'bg-[#101828]'} rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50`}
                                     role="menu"
                                     aria-label="Program submenu"
@@ -162,17 +162,17 @@ const Navbar = ({ darkColor }) => {
                                     blogs
                                 </li>
                             </Link>
-                            
+
                             {/* SEO: Added missing important pages */}
                             <Link to='/contacts' aria-label="Contact Our World of Education">
                                 <li className={`cursor-pointer uppercase text-md ${theme == 'light' ? 'text-[#007698] hover:text-gray-400' : ` ${darkColor == 'black' ? 'text-black' : 'text-white'} hover:text-[#007698]`} font-bold font-sans leading-tight text-sm`}>
                                     contact
                                 </li>
                             </Link>
-                            
-                            <Link to='/careers' aria-label="Teaching career opportunities">
-                                <li className={`cursor-pointer uppercase text-md ${theme == 'light' ? 'text-[#007698] hover:text-gray-400' : ` ${darkColor == 'black' ? 'text-black' : 'text-white'} hover:text-[#007698]`} font-bold font-sans leading-tight text-sm`}>
-                                    careers
+
+                            <Link to='/admin-login' aria-label="Admin login portal">
+                                <li className={`cursor-pointer bg-gray-200 p-1 px-2 rounded-3xl text-md ${theme == 'light' ? 'text-[#007698] hover:text-gray-400' : 'text-black hover:text-[#007698]'} font-semibold font-sans leading-tight text-sm`}>
+                                    Admin
                                 </li>
                             </Link>
                         </ul>
@@ -180,8 +180,8 @@ const Navbar = ({ darkColor }) => {
                     <nav aria-label="User actions">
                         <ul className='flex items-center justify-center gap-4 bg-[#8bc540] shadow-[0_1px_10px_hsla(0,0%,46.7%,.5)] h-12 leading-tight w-32 rounded-md'>
                             {/* SEO: Theme toggle with proper label */}
-                            <li 
-                                className={`cursor-pointer font-bold leading-3 text-sm border-e ${theme === 'light' ? 'border-e-[#dcdcdc]' : 'border-e-white'} w-5/6 flex items-center justify-center`} 
+                            <li
+                                className={`cursor-pointer font-bold leading-3 text-sm border-e ${theme === 'light' ? 'border-e-[#dcdcdc]' : 'border-e-white'} w-5/6 flex items-center justify-center`}
                                 onClick={toggleTheme}
                                 role="button"
                                 aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}

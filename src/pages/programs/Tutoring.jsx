@@ -52,7 +52,7 @@ const Tutoring = () => {
       "price": "Starting at $80/hour",
       "priceCurrency": "USD"
     },
-    "provider": {
+    "courseprovider": {
       "@type": "EducationalOrganization",
       "name": "Our World of Education",
       "description": "Expert mathematics education with 20+ years of experience"
